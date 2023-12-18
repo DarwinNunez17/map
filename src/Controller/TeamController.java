@@ -8,11 +8,18 @@ import java.util.List;
 
 public class TeamController {
     private TeamRepository teamRepo;
+    private static TeamController instance = null;
 
     public TeamController() {
         this.teamRepo = new TeamRepository(); // Initialize the repository
     }
 
+    public static TeamController getInstance(){
+        if(instance==null){
+            instance=new TeamController();
+        }
+        return instance;
+    }
     public void addTeam(int teamID, String name) {
         Team team = new Team(teamID, name);
         teamRepo.addTeam(team);

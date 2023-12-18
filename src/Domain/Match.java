@@ -27,6 +27,8 @@ public class Match {
         this.competitionID=competitionID;
     }
 
+
+
     public Team getHomeTeamID() {
         return homeTeamID;
     }
@@ -70,5 +72,21 @@ public class Match {
 
     public int getMatchID() {
         return getMatchID();
+    }
+
+    public int getScoreHomeTeam() {
+        return scoreHomeTeam;
+    }
+
+    public int getScoreAwayTeam() {
+        return scoreAwayTeam;
+    }
+
+    public int getRefereeID() {
+        return refereeID;
+    }
+
+    public int getCompetitionID() {
+        return competitionID;
     }
 }

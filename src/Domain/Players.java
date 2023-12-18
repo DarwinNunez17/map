@@ -1,8 +1,28 @@
 package Domain;
-
+import StrategyPattern.*;
 public class Players {
-    private int playerID;
     private int age;
+    private AgeCategoryStrategy ageCategoryStrategy;
+
+    public void setAgeCategoryStrategy() {
+        if (age < 20) {
+            ageCategoryStrategy = new YoungPlayerStrategy();
+        } else if (age >= 20 && age < 30) {
+            ageCategoryStrategy = new MiddlePlayerStrategy();
+        } else if (age > 30){
+            ageCategoryStrategy = new OldPlayerStrategy();
+        }
+    }
+
+    public String getAgeCategory() {
+        if (ageCategoryStrategy == null) {
+            return "Unknown";
+        }
+
+        return ageCategoryStrategy.getCategory(age);
+    }
+
+    private int playerID;
     private String nationality;
     private String position;
     private int teamID;
@@ -13,6 +33,7 @@ public class Players {
         this.playerID = playerID;
         this.name = name;
         this.age = age;
+        setAgeCategoryStrategy();
         this.nationality = nationality;
         this.position = position;
         this.teamID = teamID;

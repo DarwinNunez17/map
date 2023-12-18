@@ -11,7 +11,7 @@ public class StatisticsController {
     }
 
     public void addStatistics(int entityId, int goalsScored, int goalsConceded, int wins, int draws, int losses) {
-        Statistics statistics = new Statistics();
+        Statistics statistics = new Statistics(entityId, goalsScored, goalsConceded, wins, draws, losses);
         statistics.setGoalsScored(goalsScored);
         statistics.setGoalsConceded(goalsConceded);
         statistics.setWins(wins);

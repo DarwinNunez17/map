@@ -8,7 +8,7 @@ public class Statistics {
     private int draws;
     private int losses;
 
-    public Statistics() {
+    public Statistics(int entityId,int goalsScored,int goalsConceded,int wins,int draws,int losses) {
         this.entityId = entityId;
         this.goalsScored = 0;
         this.goalsConceded = 0;
@@ -16,7 +16,6 @@ public class Statistics {
         this.draws = 0;
         this.losses = 0;
     }
-
 
     public int getEntityId() {
         return entityId;

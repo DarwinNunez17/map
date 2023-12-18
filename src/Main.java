@@ -1,81 +1,158 @@
-import Controller.*;
-import Domain.*;
-import UI.UI;
-import Repository.*;
-
+import Controller.TeamController;
+import Domain.Awards;
+import Domain.Competitions;
+import Domain.Manager;
+import Repository.AwardsRepository;
+import Repository.CompetitionsRepository;
+import Repository.ManagerRepository;
+import UI.AwardsUI;
+import UI.CompetitionsUI;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
+
+import Factory.*;
 public class Main {
+    private static final String URL = "jdbc:mysql://localhost:3306/football";
+    private static final String USER = "root";
+    private static final String PASSWORD = "123456";
+
     public static void main(String[] args) {
-        runTests();
-        if (testsPassed) {
-            UI.ui(args);
-        }
-    }
-
-    private static boolean testsPassed = true;
-
-    private static void runTests() {
+        Connection connection;
+        List competitionsList;
+        List awardsList;
+        List managersList;
         try {
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/football", "root", "123456");
 
-            simulateUITests();
+            try {
+                AwardsRepository awardsRepository = new AwardsRepository(connection);
+                Awards newAward = new Awards("Best Player", 2022);
+                awardsRepository.addAward(newAward);
+                Awards retrievedAward = awardsRepository.getAwardByName("Best Player");
 
-            System.out.println("Toate testele au trecut cu succes.");
-        } catch (AssertionError e) {
+                assert retrievedAward != null : "Failed to retrieve the added award";
 
-            testsPassed = false;
-            System.err.println("Eroare în timpul testelor: " + e.getMessage());
+                assert retrievedAward.getName().equals("Best Player") : "Name mismatch";
+
+                assert retrievedAward.getYear() == 2022 : "Year mismatch";
+
+                awardsList = awardsRepository.getAllAwards();
+
+                Awards updatedAward = new Awards("Best Player", 2023);
+                awardsRepository.updateAward(updatedAward);
+                retrievedAward = awardsRepository.getAwardByName("Best Player");
+
+                assert retrievedAward != null : "Failed to retrieve the updated award";
+
+                assert retrievedAward.getYear() == 2023 : "Year not updated correctly";
+
+                awardsRepository.deleteAward("Best Player");
+                retrievedAward = awardsRepository.getAwardByName("Best Player");
+
+                assert retrievedAward == null : "Failed to delete the award";
+
+                System.out.println("Awards tests passed!");
+            } catch (Throwable var14) {
+                if (connection != null) {
+                    try {
+                        connection.close();
+                    } catch (Throwable var9) {
+                        var14.addSuppressed(var9);
+                    }
+                }
+
+                throw var14;
+            }
+
+            if (connection != null) {
+                connection.close();
+            }
+        } catch (SQLException var15) {
+            var15.printStackTrace();
         }
+
+        try {
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/football", "root", "123456");
+
+            try {
+                CompetitionsRepository competitionsRepository = new CompetitionsRepository(connection);
+                Competitions newCompetition = new Competitions("Premier League");
+                competitionsRepository.addCompetition(newCompetition);
+                Competitions retrievedCompetition = competitionsRepository.getCompetitionByName("Premier League");
+
+                assert retrievedCompetition != null : "Failed to retrieve the added competition";
+
+                assert retrievedCompetition.getName().equals("Premier League") : "Name mismatch";
+
+                competitionsList = competitionsRepository.getAllCompetitions();
+
+                assert competitionsList.size() >= 1 : "Unexpected number of competitions in the list";
+
+                competitionsRepository.deleteCompetition("Premier League");
+                retrievedCompetition = competitionsRepository.getCompetitionByName("Premier League");
+
+                assert retrievedCompetition == null : "Failed to delete the competition";
+
+                System.out.println("Competition tests passed!");
+            } catch (Throwable var12) {
+                if (connection != null) {
+                    try {
+                        connection.close();
+                    } catch (Throwable var8) {
+                        var12.addSuppressed(var8);
+                    }
+                }
+
+                throw var12;
+            }
+
+            if (connection != null) {
+                connection.close();
+            }
+        } catch (SQLException var13) {
+            var13.printStackTrace();
+        }
+        try {
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/football", "root", "123456");
+
+            try {
+                ManagerRepository managerRepository = new ManagerRepository(connection);
+                Manager newManager = new Manager(1, "Jose Mourinho", "Portuguese", 10);
+                managerRepository.addManager(newManager);
+                Manager retrievedManager = managerRepository.getManagerByID(1);
+
+                assert retrievedManager != null : "Failed to retrieve the added manager";
+
+                assert retrievedManager.getName().equals("Jose Mourinho") : "Name mismatch";
+
+                managersList = managerRepository.getAllManagers();
+
+                assert managersList.size() >= 1 : "Unexpected number of managers in the list";
+
+                System.out.println("Manager tests passed!");
+            } catch (Throwable var10) {
+                if (connection != null) {
+                    try {
+                        connection.close();
+                    } catch (Throwable var7) {
+                        var10.addSuppressed(var7);
+                    }
+                }
+
+                throw var10;
+            }
+
+            if (connection != null) {
+                connection.close();
+            }
+        } catch (SQLException var11) {
+            var11.printStackTrace();
+        }
+
+        CompetitionsUI.ui(args);
+        AwardsUI.ui(args);
     }
-
-    private static void simulateUITests() {
-
-        TeamController teamController = new TeamController();
-        teamController.addTeam(1, "Echipa A");
-        teamController.addTeam(2, "Echipa B");
-
-        List<Team> teams = teamController.getAllTeams();
-        assert teams.size() == 2;
-
-
-        PlayersController playerController = new PlayersController();
-        playerController.addPlayer(1, "Jucator 1", 25, "Nationalitate 1", "Atacant", 1, 10);
-        playerController.addPlayer(2, "Jucator 2", 28, "Nationalitate 2", "Mijlocaș", 1, 7);
-
-        List<Players> players = playerController.getAllPlayers();
-        assert players.size() == 2;
-
-
-        StadiumController stadiumController = new StadiumController();
-        stadiumController.addStadium("Stadion 1", "Locație 1", teams.get(0));
-        stadiumController.addStadium("Stadion 2", "Locație 2", teams.get(1));
-
-        List<Stadium> stadiums = stadiumController.getAllStadiums();
-        assert stadiums.size() == 2;
-
-
-        StatisticsController statisticsController = new StatisticsController();
-        statisticsController.addStatistics(1, 50, 30, 20, 10, 5);
-        statisticsController.addStatistics(2, 40, 25, 15, 12, 8);
-
-        Statistics firstStats = statisticsController.getStatistics(1);
-        assert firstStats != null;
-
-        assert firstStats.getGoalsScored() == 50;
-        assert firstStats.getGoalsConceded() == 30;
-        assert firstStats.getWins() == 20;
-        assert firstStats.getDraws() == 10;
-        assert firstStats.getLosses() == 5;
-
-
-
-
-        TransfersController transferController = new TransfersController();
-        transferController.addTransfer(players.get(0), teams.get(0), teams.get(1), 1000000);
-        transferController.addTransfer(players.get(1), teams.get(1), teams.get(0), 800000);
-
-        List<Transfers> transfers = transferController.getAllTransfers();
-        assert transfers.size() == 2;
-
-    }
-
 }
