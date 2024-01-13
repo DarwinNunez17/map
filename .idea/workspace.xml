@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3a65e43-5208-47e8-8c70-a6586437cece" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b632e1b5-7164-405e-b17f-b73a7be011a4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b632e1b5-7164-405e-b17f-b73a7be011a4/storage_v2/_src_/schema/football.bSuGFw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b632e1b5-7164-405e-b17f-b73a7be011a4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b632e1b5-7164-405e-b17f-b73a7be011a4/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b632e1b5-7164-405e-b17f-b73a7be011a4/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b632e1b5-7164-405e-b17f-b73a7be011a4/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballDatabase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/AwardsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/CompetitionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/ManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/MatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/PlayersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/PrincipalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/RefereeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/StadiumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/StatisticsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/TeamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Controller/TransfersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Stadium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/FootballDatabaseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Observer/TransferEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Observer/TransferObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Observer/TransferObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/AwardsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/CompetitionsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/ManagerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/MatchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/PlayersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/RefereeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/StadiumRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/StatisticsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Repository/TransfersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/AwardsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/CompetitionsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/ManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/MatchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/PlayersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/RefereeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/StadiumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/StatisticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/TeamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Services/TransfersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Tests/PlayersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Tests/TransferObserverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/AwardsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/CompetitionsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/ManagerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/MatchController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/PlayersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/PrincipalController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/RefereeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/StadiumController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/StatisticsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/TeamController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Controller/TransfersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Awards.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Competitions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/ManagerComponent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/ManagerDecorator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Match.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Players.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Referee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Stadium$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Stadium.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Statistics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Team.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Domain/Transfers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Factory/DefaultPlayerFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Factory/PlayerFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/FootballDatabaseApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Observer/TransferEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Observer/TransferObservable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Observer/TransferObserver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/AwardsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/CompetitionsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/ManagerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/MatchRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/PlayersRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/RefereeRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/StadiumRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/StatisticsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/TeamRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Repository/TransfersRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/AwardsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/CompetitionsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/ManagerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/MatchService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/PlayersService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/RefereeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/StadiumService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/StatisticsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/TeamService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Services/TransfersService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/StrategyPattern/AgeCategoryStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/StrategyPattern/MiddlePlayerStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/StrategyPattern/OldPlayerStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/StrategyPattern/YoungPlayerStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Tests/PlayersTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/laborator/FootballDatabase/Tests/TransferObserverTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labor2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/labor2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AwardsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CompetitionsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ManagerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MatchController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PlayersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RefereeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StadiumController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StatisticsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TeamController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TransfersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Awards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Awards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Competitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Competitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Referee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Referee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Stadium.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Transfers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Domain/Transfers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/DefaultPlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Factory/DefaultPlayerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/Factory/PlayerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/TransferObservable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observer/TransferObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AwardsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CompetitionsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ManagerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/MatchRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PlayersRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/RefereeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/StadiumRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/StatisticsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TeamRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TransfersRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StrategyPattern/AgeCategoryStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/StrategyPattern/AgeCategoryStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StrategyPattern/MiddlePlayerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/StrategyPattern/MiddlePlayerStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StrategyPattern/OldPlayerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/StrategyPattern/OldPlayerStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StrategyPattern/YoungPlayerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laborator/FootballDatabase/StrategyPattern/YoungPlayerStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/AwardsUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CompetitionsUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2areaMZkryCva7bJmlafHm9ZtND" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/david/IdeaProjects/labor2 awards",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="FootballDatabaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="FootballDatabase" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.laborator.FootballDatabase.FootballDatabaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3a65e43-5208-47e8-8c70-a6586437cece" name="Changes" comment="" />
+      <created>1705081190043</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705081190043</updated>
+      <workItem from="1705081191061" duration="4799000" />
+      <workItem from="1705150029103" duration="4434000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/labor2_awards$FootballDatabaseApplication.ic" NAME="FootballDatabaseApplication Coverage Results" MODIFIED="1705085376142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
